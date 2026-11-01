@@ -1,0 +1,58 @@
+# ==============================================================================
+# BODHIWAVES GROWTH OS — GITIGNORE
+# ==============================================================================
+
+# Node.js & Frontend dependencies & builds
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python & Backend environments & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local databases & cluster data
+pgdata/
+*.sqlite
+*.sqlite3
+*.db
+*.pid
+
+# Environment variables & secrets (CRITICAL)
+.env
+.env.*
+*.env
+!.env.example
+
+# Logs & temporary files
+logs/
+*.log
+*.tmp
+*.temp
+
+# OS & Editor specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
