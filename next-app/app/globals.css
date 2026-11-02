@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f7f8fa;
+  --foreground: #172033;
+  --card: #ffffff;
+  --card-foreground: #172033;
+  --popover: #ffffff;
+  --popover-foreground: #172033;
+  --primary: #176b5b;
+  --primary-foreground: #ffffff;
+  --secondary: #edf2f1;
+  --secondary-foreground: #23463f;
+  --muted: #f0f2f5;
+  --muted-foreground: #667085;
+  --accent: #e7f3ef;
+  --accent-foreground: #176b5b;
+  --destructive: #c2413b;
+  --border: #e5e9ef;
+  --input: #e5e9ef;
+  --ring: #4d9b89;
+  --radius: 1rem;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0d1518;
+  --foreground: #e8efed;
+  --card: #142126;
+  --card-foreground: #e8efed;
+  --popover: #142126;
+  --popover-foreground: #e8efed;
+  --primary: #55b49c;
+  --primary-foreground: #09231c;
+  --secondary: #203238;
+  --secondary-foreground: #dcebe6;
+  --muted: #1a292e;
+  --muted-foreground: #9aaba8;
+  --accent: #1d3933;
+  --accent-foreground: #8bd3bd;
+  --destructive: #e16b65;
+  --border: #293a40;
+  --input: #293a40;
+  --ring: #55b49c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: color-mix(in srgb, var(--primary) 20%, transparent); }
