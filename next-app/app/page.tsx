@@ -88,10 +88,18 @@ export default function HomePage() {
           </div>
         </header>
 
+        <nav aria-label="Mobile primary navigation" className="flex gap-2 overflow-x-auto border-b border-border bg-card px-4 py-3 lg:hidden">
+          {navigation.map(({ label, icon: Icon, active }) => (
+            <span key={label} aria-current={active ? "page" : undefined} className={active ? "inline-flex shrink-0 items-center gap-2 rounded-lg bg-accent px-3 py-2 text-xs font-semibold text-accent-foreground" : "inline-flex shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-xs text-muted-foreground"}>
+              <Icon className="size-4" />{label}
+            </span>
+          ))}
+        </nav>
+
         <div className="mx-auto max-w-[1440px] space-y-8 p-5 md:p-8">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p className="text-sm font-medium text-primary">Monday workspace</p>
+              <p className="text-sm font-medium text-primary">Agency workspace</p>
               <h1 className="mt-2 text-2xl font-bold tracking-tight md:text-3xl">Good to see you.</h1>
               <p className="mt-2 max-w-2xl text-sm text-muted-foreground">A clear view of your sales, delivery, people and client operations starts here.</p>
             </div>
